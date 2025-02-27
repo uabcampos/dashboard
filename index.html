@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forge AHEAD Digital Impact Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Forge AHEAD Digital Impact Dashboard</h1>
+        <p>Tracking Engagement & Impact | Jan 1 - Feb 27, 2025</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#executive">Executive Summary</a></li>
+            <li><a href="#linkedin">LinkedIn</a></li>
+            <li><a href="#email">Email Marketing</a></li>
+            <li><a href="#website">Website</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Executive Summary -->
+        <section id="executive">
+            <h2>Executive Summary</h2>
+            <div class="cards">
+                <div class="card">Engagement Rate: <span>0.12 <span class="trend up">↑15%</span></span></div>
+                <div class="card">Audience Growth: <span>TBD</span></div>
+                <div class="card">Content Effectiveness: <span>0.07 <span class="trend up">↑10%</span></span></div>
+            </div>
+            <canvas id="crossPlatformChart" width="400" height="200"></canvas>
+            <div id="bigWins"></div>
+        </section>
+
+        <!-- LinkedIn -->
+        <section id="linkedin">
+            <h2>LinkedIn Performance</h2>
+            <canvas id="linkedinTrends" width="400" height="200"></canvas>
+            <table id="linkedinTable">
+                <thead><tr><th>Post</th><th>Impressions</th><th>Engagement</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- Email -->
+        <section id="email">
+            <h2>Email Marketing Performance</h2>
+            <div class="cards">
+                <div class="card">Open Rate: <span>51.16% <span class="trend up">↑16%</span></span></div>
+                <div class="card">CTR: <span>5.39% <span class="trend down">↓2%</span></span></div>
+            </div>
+            <canvas id="emailCampaigns" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Website -->
+        <section id="website">
+            <h2>Website Analytics</h2>
+            <canvas id="websiteTraffic" width="400" height="200"></canvas>
+            <canvas id="referralPie" width="200" height="200"></canvas>
+        </section>
+
+        <!-- Instagram Placeholder -->
+        <section id="instagram">
+            <h2>Instagram Performance</h2>
+            <p>Awaiting Instagram data...</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
